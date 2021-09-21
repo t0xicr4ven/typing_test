@@ -2,7 +2,6 @@ from tkinter import *
 import random
 
 
-rand_num_for_para = random.randint(1,5)
 FONT=('Courier',28)
 BTN_FONT=('Courier', 18)
 word_list = []
@@ -115,7 +114,7 @@ t.grid(column=0, columnspan=2, row=1, padx=10, pady=10)
 entry.grid(column=0, columnspan=2, row=2, padx=10, pady=10)
 start_btn.grid(column=0, row=3, padx=10, pady=10)
 quit_btn.grid(column=1, row=3, padx=10, pady=10)
-# when space bar is pressed do checks
+# key binds
 window.bind("<space>", check_if_match)
 window.bind('<Shift_L>', start_test)
 
